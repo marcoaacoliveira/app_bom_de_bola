@@ -3690,3 +3690,321 @@ Processing by ApiController#i18n as JSON
   Parameters: {"locale"=>"site-en"}
   Rendered app/assets/i18n/site-en.json (0.1ms)
 Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/singleview" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+Processing by SingleviewController#index as HTML
+  Rendered singleview/index.html.erb within layouts/application (1.3ms)
+  Rendered layouts/partials/_topnavbar.html.erb (4.9ms)
+  Rendered layouts/partials/_sidebar.html.erb (0.5ms)
+  Rendered layouts/partials/_offsidebar.html.erb (0.3ms)
+  Rendered layouts/partials/_footer.html.erb (0.2ms)
+Completed 200 OK in 287ms (Views: 286.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fontawesome/css/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/simple-line-icons/css/simple-line-icons.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/animate.css/animate.min.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/singleview.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/whirl/dist/whirl.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/modernizr/modernizr.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/fonts.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/vendor.assets.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/angle/app.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/bootstrap/dist/js/bootstrap.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/jQuery-Storage-API/jquery.storageapi.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/jquery.easing/js/jquery.easing.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:07 -0300
+
+
+Started GET "/assets/animo.js/animo.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/jquery-localize-i18n/dist/jquery.localize.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/singleview.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/angle/app.init.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/base.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/angle/modules/bootstrap-start.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/angle/modules/clear-storage.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/angle/modules/constants.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/angle/modules/localize.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/angle/modules/navbar-search.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/angle/modules/sidebar.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/angle/modules/toggle-state.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/angle/modules/utils.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/assets/fontawesome/fonts/fontawesome-webfont.woff?v=4.2.0" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+
+
+Started GET "/api/i18n/site-en.json" for 127.0.0.1 at 2015-07-21 13:55:08 -0300
+Processing by ApiController#i18n as JSON
+  Parameters: {"locale"=>"site-en"}
+  Rendered app/assets/i18n/site-en.json (0.7ms)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/singleview" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+Processing by SingleviewController#index as HTML
+  Rendered singleview/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/partials/_topnavbar.html.erb (0.4ms)
+  Rendered layouts/partials/_sidebar.html.erb (0.1ms)
+  Rendered layouts/partials/_offsidebar.html.erb (0.1ms)
+  Rendered layouts/partials/_footer.html.erb (0.1ms)
+Completed 200 OK in 138ms (Views: 137.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fontawesome/css/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/angle/app.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/animate.css/animate.min.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/singleview.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/whirl/dist/whirl.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/simple-line-icons/css/simple-line-icons.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/fonts.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/vendor.assets.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/bootstrap/dist/js/bootstrap.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/modernizr/modernizr.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/jquery-localize-i18n/dist/jquery.localize.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/jQuery-Storage-API/jquery.storageapi.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/jquery.easing/js/jquery.easing.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/animo.js/animo.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/base.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/singleview.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/angle/app.init.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/angle/modules/bootstrap-start.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/angle/modules/clear-storage.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/angle/modules/constants.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/angle/modules/localize.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/angle/modules/navbar-search.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/angle/modules/sidebar.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/angle/modules/toggle-state.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/angle/modules/utils.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+
+
+Started GET "/api/i18n/site-en.json" for 127.0.0.1 at 2015-07-21 13:55:11 -0300
+Processing by ApiController#i18n as JSON
+  Parameters: {"locale"=>"site-en"}
+  Rendered app/assets/i18n/site-en.json (0.1ms)
+Completed 200 OK in 2ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/singleview" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+Processing by SingleviewController#index as HTML
+  Rendered singleview/index.html.erb within layouts/application (0.0ms)
+  Rendered layouts/partials/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/partials/_sidebar.html.erb (0.1ms)
+  Rendered layouts/partials/_offsidebar.html.erb (0.0ms)
+  Rendered layouts/partials/_footer.html.erb (0.0ms)
+Completed 200 OK in 148ms (Views: 147.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/fontawesome/css/font-awesome.min.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/simple-line-icons/css/simple-line-icons.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/singleview.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/base.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/animate.css/animate.min.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/whirl/dist/whirl.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/angle/app.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/vendor.assets.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/fonts.css?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/modernizr/modernizr.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/jquery/dist/jquery.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/bootstrap/dist/js/bootstrap.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/jQuery-Storage-API/jquery.storageapi.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/jquery.easing/js/jquery.easing.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/animo.js/animo.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/jquery-localize-i18n/dist/jquery.localize.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/base.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/singleview.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/angle/app.init.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/angle/modules/bootstrap-start.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/angle/modules/clear-storage.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/angle/modules/constants.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/angle/modules/localize.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/angle/modules/navbar-search.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/angle/modules/sidebar.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/angle/modules/toggle-state.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/assets/angle/modules/utils.js?body=1" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+
+
+Started GET "/api/i18n/site-en.json" for 127.0.0.1 at 2015-07-21 13:55:13 -0300
+Processing by ApiController#i18n as JSON
+  Parameters: {"locale"=>"site-en"}
+  Rendered app/assets/i18n/site-en.json (0.1ms)
+Completed 200 OK in 4ms (Views: 3.5ms | ActiveRecord: 0.0ms)
