@@ -5,10 +5,10 @@ gem 'rails', '4.1.8'
 
 # HEROKU doesn't support sqlite3. 
 # Comment this gem
-gem 'sqlite3'
+#gem 'sqlite3'
 # and uncomment the following
-# gem 'pg'
-# gem 'thin'
+gem 'pg'
+gem 'thin'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0.1'
