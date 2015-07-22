@@ -20,7 +20,7 @@ class LoginController < ApplicationController
       end
 
       user = User.auth(email,password)
-      if !person
+      if !user
         flash[:notice] = "Falha no login"
         return
       end
@@ -29,7 +29,7 @@ class LoginController < ApplicationController
       session[:id] = user.id
       session[:name] = user.name
       session[:admin] = user.admin
-      redirect_to user_path
+      redirect_to users_path
     end
   end
 

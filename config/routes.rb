@@ -1,8 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'login/login'
-
-  get 'login/logout'
+  match "autenticar" => "login#login", via: [:get, :post]
+  get "sair" => "login#logout"
 
 
   get '/users/recover'
