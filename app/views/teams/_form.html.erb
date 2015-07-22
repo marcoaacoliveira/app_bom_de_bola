@@ -1,41 +1,52 @@
-<%= form_for(@team) do |f| %>
-  <% if @team.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@team.errors.count, "error") %> prohibited this team from being saved:</h2>
+<div class="block-center mt-xl wd-xl">
+  <!-- START panel-->
+  <div class="panel panel-dark panel-flat">
+    <div class="panel-body">
+      <p class="text-center pv">Cadastro para novo time.</p>
 
-      <ul>
-      <% @team.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+        <%= form_for(@team) do |f| %>
+          <% if @team.errors.any? %>
+            <div id="error_explanation">
+              <h2><%= pluralize(@team.errors.count, "error") %> prohibited this team from being saved:</h2>
+
+              <ul>
+              <% @team.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+              <% end %>
+              </ul>
+            </div>
+          <% end %>
+
+          <div class="form-group has-feedback">
+            <%= f.label :name, :class => 'text-muted' %><br>
+            <%= f.text_field :name,:class => 'form-control' %>
+          </div>
+          <div class="form-group has-feedback">
+            <%= f.label :user_id, :class => 'text-muted' %><br>
+            <%=  f.select :user_id, @users.map{ |u| [u.name, u.id] }, :class => 'form-control'%>
+          </div>
+          <div class="form-group has-feedback">
+            <%= f.label :red %><br>
+            <%= f.number_field :red,:class => 'form-control' %>
+          </div>
+          <div class="form-group has-feedback">
+            <%= f.label :yellow %><br>
+            <%= f.number_field :yellow,:class => 'form-control' %>
+          </div>
+          <div class="form-group has-feedback">
+            <%= f.label :rpa %><br>
+            <%= f.number_field :rpa,:class => 'form-control' %>
+          </div>
+          <div class="form-group has-feedback">
+            <%= f.label :category %><br>
+            <%= f.text_field :category,:class => 'form-control' %>
+          </div>
+          <div class="actions">
+            <%= f.submit 'Enviar', :class => 'btn btn-block btn-primary mt-lg' %>
+          </div>
+        <% end %>
     </div>
-  <% end %>
+  </div>
+  <!-- END panel-->
+</div>
 
-  <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
-  </div>
-  <div class="field">
-    <%= f.label :user_id %><br>
-    <%= f.number_field :user_id %>
-  </div>
-  <div class="field">
-    <%= f.label :red %><br>
-    <%= f.number_field :red %>
-  </div>
-  <div class="field">
-    <%= f.label :yellow %><br>
-    <%= f.number_field :yellow %>
-  </div>
-  <div class="field">
-    <%= f.label :rpa %><br>
-    <%= f.number_field :rpa %>
-  </div>
-  <div class="field">
-    <%= f.label :category %><br>
-    <%= f.text_field :category %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
