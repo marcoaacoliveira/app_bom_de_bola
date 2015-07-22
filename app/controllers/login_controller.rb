@@ -1,4 +1,5 @@
 class LoginController < ApplicationController
+  skip_before_filter :logged?, :except => [:autenticar]
   def login
     if request.post?
       email = params[:email]
