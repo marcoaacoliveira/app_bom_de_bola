@@ -7,11 +7,23 @@
             <span>Menu principal</span>
          </li>
          <li class="<%= 'active' if controller?('users')%>">
-            <a href="/users" title="Single View">
+            <a href="/users" title="Usuário">
                <em class="icon-users"></em>
                <span>Usuários</span>
             </a>
          </li>
+        <li class="<%= 'active' if controller?('teams')%>">
+        <a href='/teams' title="Times">
+          <em class='icon-bar-chart'></em>
+          <span>Times</span>
+        </a>
+        </li>
+        <li class="<%= 'active' if controller?('matches')%>">
+          <a href="/matches" title="Partidas">
+            <em class='icon-trophy'></em>
+            <span>Partidas</span>
+          </a>
+        </li>
       </ul>
       <!-- END sidebar nav-->
    </nav>
