@@ -4,6 +4,8 @@ Rails.application.routes.draw do
 
   get 'login/logout'
 
+
+  get '/users/recover'
   resources :users
 
   # defaults to dashboard

@@ -4,10 +4,12 @@ class User < ActiveRecord::Base
   validates_presence_of :email, :on => :create
 
 
-  def self.auth
-    person = Person.where(["email=?", email]).first
-    if person && person.authenticate(password)
-      puts "verificacao confere"
+  def self.auth(email,password)
+    user = User.where(["email=?", email]).first
+    if user && user.authenticate(password)
+      return user
+    else
+      return false
     end
   end
 end
