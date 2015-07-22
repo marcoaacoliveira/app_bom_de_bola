@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
 
+  get 'login/login'
+
+  get 'login/logout'
+
   resources :users
 
   # defaults to dashboard
