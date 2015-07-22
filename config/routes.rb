@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :teams
+
   match "autenticar" => "login#login", via: [:get, :post]
   get "sair" => "login#logout"
 
