@@ -23,7 +23,7 @@
             <% @teams.each do |team| %>
               <tr>
                 <td><%= team.name %></td>
-                <td><%= team.user_id %></td>
+                <td><%= team.user.nil? ? "Não referenciado" : team.user.name %></td>
                 <td><%= team.red %></td>
                 <td><%= team.yellow %></td>
                 <td><%= team.rpa %></td>
