@@ -6,17 +6,30 @@
          <li class="nav-heading">
             <span>Menu principal</span>
          </li>
-         <li class="<%= 'active' if controller?('users')%>">
+        <li class="<%= 'active' if controller?('users')%>">
             <a href="/users" title="Usuário">
                <em class="icon-users"></em>
                <span>Usuários</span>
             </a>
          </li>
         <li class="<%= 'active' if controller?('teams')%>">
-        <a href='/teams' title="Times">
-          <em class='icon-bar-chart'></em>
-          <span>Times</span>
-        </a>
+          <a href="#dashboard" title="Times" data-toggle="collapse">
+            <em class="icon-bar-chart"></em>
+            <span data-localize="sidebar.nav.DASHBOARD">Times</span>
+          </a>
+          <ul id="dashboard" class="nav sidebar-subnav collapse">
+            <li class="sidebar-subnav-header">Times</li>
+            <li class="<%= 'active' if controller?('teams') && action?('index') %>">
+              <a href="/teams" title="Ver todos">
+                <span>Ver todos</span>
+              </a>
+            </li>
+            <li class="<%= 'active' if controller?('teams') && action?('players') %>">
+              <a href="/teams/players" title="Jogadores">
+                <span>Jogadores</span>
+              </a>
+            </li>
+          </ul>
         </li>
         <li class="<%= 'active' if controller?('matches')%>">
           <a href="/matches" title="Partidas">
