@@ -1,5 +1,8 @@
 class PlayersController < ApplicationController
+  before_filter :verify_permission, except: [:index]
   before_action :set_player, only: [:show, :edit, :update, :destroy]
+  before_action :set_teams, only: [:edit,:new]
+
 
   # GET /players
   # GET /players.json
@@ -65,6 +68,14 @@ class PlayersController < ApplicationController
     # Use callbacks to share common setup or constraints between actions.
     def set_player
       @player = Player.find(params[:id])
+    end
+  
+    def  set_teams
+      if (session[:admin] == true)
+        @teams = Team.all
+      else
+        @teams = User.find(session[:id]).teams
+      end
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

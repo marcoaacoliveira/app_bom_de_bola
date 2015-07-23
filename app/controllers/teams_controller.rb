@@ -4,11 +4,7 @@ class TeamsController < ApplicationController
   # GET /teams
   # GET /teams.json
   def index
-    if(session[:admin]==true)
-      @teams = Team.all
-    else
-      @teams = User.find(session[:id]).teams
-    end
+    @teams = Team.all
   end
 
   # GET /teams/1
@@ -24,6 +20,7 @@ class TeamsController < ApplicationController
 
   # GET /teams/1/edit
   def edit
+    @users = User.all
   end
 
   # POST /teams

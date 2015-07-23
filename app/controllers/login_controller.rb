@@ -26,7 +26,6 @@ class LoginController < ApplicationController
         return
       end
 
-      flash[:notice] = "Bem-vindo, #{user.name}!"
       session[:id] = user.id
       session[:name] = user.name
       session[:admin] = user.admin

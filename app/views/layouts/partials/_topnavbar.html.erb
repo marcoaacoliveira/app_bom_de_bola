@@ -32,22 +32,15 @@
       <ul class="nav navbar-nav navbar-right">
          <!-- Search icon-->
          <li>
-            <a href="#" data-search-open="">
-               <em class="icon-magnifier"></em>
+            <a href="/sair" data-search-open="">
+              <% if session[:id]%>
+               <%= "Você está logado como #{session[:name]}, clique aqui para sair"%>
+              <% end %>
             </a>
          </li>
       </ul>
       <!-- END Right Navbar-->
    </div>
    <!-- END Nav wrapper-->
-   <!-- START Search form-->
-   <form role="search" action="search.html" class="navbar-form">
-      <div class="form-group has-feedback">
-         <input type="text" placeholder="Type and hit enter ..." class="form-control" />
-         <div data-search-dismiss="" class="fa fa-times form-control-feedback"></div>
-      </div>
-      <button type="submit" class="hidden btn btn-default">Submit</button>
-   </form>
-   <!-- END Search form-->
 </nav>
 <!-- END Top Navbar-->
