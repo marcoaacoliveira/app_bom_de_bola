@@ -10,11 +10,11 @@
           <table id="datatable1" class="table table-striped table-hover">
             <thead>
             <tr>
-              <th>Name</th>
-              <th>Age</th>
-              <th>Red</th>
-              <th>Yellow</th>
-              <th>Team</th>
+              <th>Nome</th>
+              <th>Idade</th>
+              <th>C. Vermelhos</th>
+              <th>C. Amarelos</th>
+              <th>Time</th>
               <th colspan="3"></th>
             </tr>
           </thead>
@@ -27,9 +27,9 @@
                 <td><%= player.red %></td>
                 <td><%= player.yellow %></td>
                 <td><%= player.team.name %></td>
-                <td><%= link_to 'Show', player %></td>
-                <td><%= link_to 'Edit', edit_player_path(player) %></td>
-                <td><%= link_to 'Destroy', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                <td><%= link_to 'Ver', player %></td>
+                <td><%= link_to 'Editar', edit_player_path(player) %></td>
+                <td><%= link_to 'Remover', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
               </tr>
             <% end %>
           </tbody>
