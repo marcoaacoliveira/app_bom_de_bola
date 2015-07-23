@@ -26,7 +26,7 @@
                 <td><%= player.age %></td>
                 <td><%= player.red %></td>
                 <td><%= player.yellow %></td>
-                <td><%= player.team.name %></td>
+                <td><%= player.team ? player.team.name : 'Não existe time' %></td>
                 <td><%= link_to 'Ver', player %></td>
                 <td><%= link_to 'Editar', edit_player_path(player) %></td>
                 <td><%= link_to 'Remover', player, method: :delete, data: { confirm: 'Are you sure?' } %></td>
