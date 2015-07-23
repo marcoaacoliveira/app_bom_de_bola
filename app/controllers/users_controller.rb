@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   skip_before_filter :logged?, :only => [:recover]
-  before_filter :verify_permission, except: [:index]
+  before_action :verify_permission, except: [:index]
   # GET /users
   # GET /users.json
   def index
@@ -71,7 +71,7 @@ class UsersController < ApplicationController
       @user = User.find(params[:id])
     end
     def verify_permission
-      redirect_to(users_path) unless(session[:admin]==true)
+      redirect_to(users_url) unless(session[:admin]==true)
     end
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params

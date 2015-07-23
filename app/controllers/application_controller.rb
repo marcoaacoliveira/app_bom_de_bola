@@ -7,6 +7,4 @@ class ApplicationController < ActionController::Base
   def logged?
     redirect_to "/autenticar" if !session[:id]
   end
-  def dashboard
-  end
 end
