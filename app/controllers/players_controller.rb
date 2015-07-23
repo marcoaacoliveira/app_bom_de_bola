@@ -1,5 +1,4 @@
 class PlayersController < ApplicationController
-  before_filter :verify_permission, except: [:index]
   before_action :set_player, only: [:show, :edit, :update, :destroy]
   before_action :set_teams, only: [:edit,:new]
 
@@ -69,7 +68,7 @@ class PlayersController < ApplicationController
     def set_player
       @player = Player.find(params[:id])
     end
-  
+
     def  set_teams
       if (session[:admin] == true)
         @teams = Team.all
