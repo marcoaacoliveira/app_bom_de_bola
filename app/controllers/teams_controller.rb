@@ -1,6 +1,6 @@
 class TeamsController < ApplicationController
   before_action :set_team, only: [:show, :edit, :update, :destroy]
-
+  before_filter :verify_permission, except: [:index]
   # GET /teams
   # GET /teams.json
   def index
@@ -68,7 +68,9 @@ class TeamsController < ApplicationController
     def set_team
       @team = Team.find(params[:id])
     end
-
+    def verify_permission
+      redirect_to(teams_path) unless(session[:admin]==true)
+    end
     # Never trust parameters from the scary internet, only allow the white list through.
     def team_params
       params.require(:team).permit(:name, :user_id, :red, :yellow, :rpa, :category)
