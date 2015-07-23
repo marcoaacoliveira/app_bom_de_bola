@@ -18,7 +18,7 @@
           <% end %>
 
           <div class="form-group has-feedback">
-            <%= f.label :name, :class => 'text-muted'%><br>
+            <%= f.label :name, "Nome", :class => 'text-muted'%><br>
             <%= f.text_field :name, :class => 'form-control', :id => 'signupInputEmail1' %>
           </div>
           <div class="form-group has-feedback">
@@ -27,12 +27,12 @@
             <span class="fa fa-envelope form-control-feedback text-muted"></span>
           </div>
           <div class="form-group has-feedback">
-            <%= f.label :password, :class => 'text-muted' %><br>
+            <%= f.label :password, "Senha", :class => 'text-muted' %><br>
             <%= f.password_field :password, :class => 'form-control' %>
             <span class="fa fa-lock form-control-feedback text-muted"></span>
           </div>
             <div class="form-group has-feedback">
-              <%= f.label :password_confirmation, :class => 'text-muted' %><br>
+              <%= f.label :password_confirmation, "Confirme sua senha", :class => 'text-muted' %><br>
               <%= f.password_field :password_confirmation, :class => 'form-control' %>
               <span class="fa fa-lock form-control-feedback text-muted"></span>
             </div>

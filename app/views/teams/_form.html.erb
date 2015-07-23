@@ -18,19 +18,19 @@
           <% end %>
 
           <div class="form-group has-feedback">
-            <%= f.label :name, :class => 'text-muted' %><br>
+            <%= f.label :name, "Nome", :class => 'text-muted' %><br>
             <%= f.text_field :name,:class => 'form-control' %>
           </div>
           <div class="form-group has-feedback">
-            <%= f.label :user_id, :class => 'text-muted' %><br>
+            <%= f.label :user_id, "Treinador",:class => 'text-muted' %><br>
             <%=  f.select :user_id, @users.map{ |u| [u.name, u.id] }, :class => 'form-control'%>
           </div>
           <div class="form-group has-feedback">
-            <%= f.label :red, :class => 'text-muted'%><br>
+            <%= f.label :red,"Cartões vermelhos", :class => 'text-muted'%><br>
             <%= f.number_field :red,:class => 'form-control' %>
           </div>
           <div class="form-group has-feedback">
-            <%= f.label :yellow, :class => 'text-muted' %><br>
+            <%= f.label :yellow,"Cartões amarelos", :class => 'text-muted' %><br>
             <%= f.number_field :yellow,:class => 'form-control' %>
           </div>
           <div class="form-group has-feedback">
@@ -38,7 +38,7 @@
             <%= f.number_field :rpa,:class => 'form-control' %>
           </div>
           <div class="form-group has-feedback">
-            <%= f.label :category, :class => 'text-muted' %><br>
+            <%= f.label :category, "Categoria", :class => 'text-muted' %><br>
             <%= f.text_field :category,:class => 'form-control' %>
           </div>
           <div class="actions">
