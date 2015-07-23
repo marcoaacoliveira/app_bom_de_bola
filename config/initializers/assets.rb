@@ -16,3 +16,6 @@ Rails.application.config.assets.precompile += %w( login.js )
 Rails.application.config.assets.precompile += %w( teams.css )
 Rails.application.config.assets.precompile += %w( teams.js )
 
+Rails.application.config.assets.precompile += %w( players.css )
+Rails.application.config.assets.precompile += %w( players.js )
+

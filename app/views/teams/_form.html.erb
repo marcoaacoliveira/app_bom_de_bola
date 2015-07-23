@@ -26,19 +26,19 @@
             <%=  f.select :user_id, @users.map{ |u| [u.name, u.id] }, :class => 'form-control'%>
           </div>
           <div class="form-group has-feedback">
-            <%= f.label :red %><br>
+            <%= f.label :red, :class => 'text-muted'%><br>
             <%= f.number_field :red,:class => 'form-control' %>
           </div>
           <div class="form-group has-feedback">
-            <%= f.label :yellow %><br>
+            <%= f.label :yellow, :class => 'text-muted' %><br>
             <%= f.number_field :yellow,:class => 'form-control' %>
           </div>
           <div class="form-group has-feedback">
-            <%= f.label :rpa %><br>
+            <%= f.label :rpa, :class => 'text-muted' %><br>
             <%= f.number_field :rpa,:class => 'form-control' %>
           </div>
           <div class="form-group has-feedback">
-            <%= f.label :category %><br>
+            <%= f.label :category, :class => 'text-muted' %><br>
             <%= f.text_field :category,:class => 'form-control' %>
           </div>
           <div class="actions">
