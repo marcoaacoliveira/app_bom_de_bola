@@ -1,4 +1,9 @@
-<%= form_for(@match) do |f| %>
+<div class="block-center mt-xl wd-xl">
+  <!-- START panel-->
+  <div class="panel panel-dark panel-flat">
+    <div class="panel-body">
+      <p class="text-center pv">Formulário para partidas.</p>
+      <%= form_for(@match) do |f| %>
   <% if @match.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@match.errors.count, "error") %> prohibited this match from being saved:</h2>
@@ -11,23 +16,28 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= f.label :when %><br>
-    <%= f.datetime_select :when %>
+  <div class="form-group has-feedback">
+    <%= f.label :when, "Quando",:class => 'text-muted' %><br>
+    <%= f.datetime_select :when,:class => 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :team_id %><br>
-    <%= f.text_field :team_id %>
+  <div class="form-group has-feedback">
+    <%= f.label :team_id, "Time 1",:class => 'text-muted' %><br>
+    <%= f.text_field :team_id,:class => 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :challenger_id %><br>
-    <%= f.text_field :challenger_id %>
+  <div class="form-group has-feedback">
+    <%= f.label :challenger_id, "Time 2",:class => 'text-muted' %><br>
+    <%= f.text_field :challenger_id,:class => 'form-control' %>
   </div>
-  <div class="field">
-    <%= f.label :where_id %><br>
-    <%= f.text_field :where_id %>
+  <div class="form-group has-feedback">
+    <%= f.label :where_id, "Campo",:class => 'text-muted' %><br>
+    <%= f.text_field :where_id,:class => 'form-control' %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit'Enviar', :class => 'btn btn-block btn-primary mt-lg' %>
   </div>
 <% end %>
+    </div>
+  </div>
+  <!-- END panel-->
+</div>
+
