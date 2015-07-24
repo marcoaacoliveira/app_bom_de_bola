@@ -21,10 +21,10 @@
   <tbody>
     <% @matches.each do |match| %>
       <tr>
-        <td><%= match.when %></td>
-        <td><%= match.team %></td>
-        <td><%= match.challenger %></td>
-        <td><%= match.where %></td>
+        <td><%= match.when.strftime("%d/%m/%Y às %H:%M") %></td>
+        <td><%= Team.find(match.team_id).name %></td>
+        <td><%= Team.find(match.challenger_id).name %></td>
+        <td><%= Field.find(match.where_id).name %></td>
         <td><%= link_to 'Ver', match %></td>
         <td><%= link_to 'Editar', edit_match_path(match) %></td>
         <td><%= link_to 'Excluir', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>

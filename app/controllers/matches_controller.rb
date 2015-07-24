@@ -15,6 +15,7 @@ class MatchesController < ApplicationController
 
   # GET /matches/new
   def new
+    @fields = Field.all
     @match = Match.new
     @challengers = Team.all
   end
