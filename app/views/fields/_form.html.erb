@@ -1,4 +1,10 @@
-<%= form_for(@field) do |f| %>
+<div class="block-center mt-xl wd-xl">
+  <!-- START panel-->
+  <div class="panel panel-dark panel-flat">
+    <div class="panel-body">
+      <p class="text-center pv">Formulário para campo.</p>
+
+      <%= form_for(@field) do |f| %>
   <% if @field.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@field.errors.count, "error") %> prohibited this field from being saved:</h2>
@@ -12,14 +18,18 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :name %><br>
-    <%= f.text_field :name %>
+    <%= f.label :name, 'Nome',:class => 'text-muted'  %><br>
+    <%= f.text_field :name,:class => 'form-control'   %>
   </div>
   <div class="field">
-    <%= f.label :addres %><br>
-    <%= f.text_field :addres %>
+    <%= f.label :addres,'Endereço',:class => 'text-muted'  %><br>
+    <%= f.text_field :addres,:class => 'form-control'   %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit 'Enviar', :class => 'btn btn-block btn-primary mt-lg'%>
   </div>
 <% end %>
+    </div>
+  </div>
+  <!-- END panel-->
+</div>
