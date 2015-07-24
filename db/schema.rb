@@ -11,21 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150724162508) do
+ActiveRecord::Schema.define(version: 20150724190439) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
+  create_table "matches", force: true do |t|
+    t.integer  "team_id1_id"
+    t.integer  "team_id2_id"
+    t.date     "date"
+    t.integer  "field_id_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "matches", ["field_id_id"], name: "index_matches_on_field_id_id", using: :btree
+  add_index "matches", ["team_id1_id"], name: "index_matches_on_team_id1_id", using: :btree
+  add_index "matches", ["team_id2_id"], name: "index_matches_on_team_id2_id", using: :btree
+
   create_table "players", force: true do |t|
     t.string   "name"
     t.integer  "age"
-    t.integer  "red"
-    t.integer  "yellow"
+    t.integer  "red",          default: 0
+    t.integer  "yellow",       default: 0
     t.integer  "team_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.integer  "total_yellow"
-    t.integer  "punishment"
+    t.integer  "total_yellow", default: 0
+    t.integer  "punishment",   default: 0
   end
 
   add_index "players", ["team_id"], name: "index_players_on_team_id", using: :btree

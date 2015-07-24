@@ -19,3 +19,6 @@ Rails.application.config.assets.precompile += %w( teams.js )
 Rails.application.config.assets.precompile += %w( players.css )
 Rails.application.config.assets.precompile += %w( players.js )
 
+Rails.application.config.assets.precompile += %w( matches.css )
+Rails.application.config.assets.precompile += %w( matches.js )
+
