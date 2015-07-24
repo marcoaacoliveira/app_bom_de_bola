@@ -16,17 +16,22 @@ class MatchesController < ApplicationController
   # GET /matches/new
   def new
     @match = Match.new
+    @challengers = Team.all
   end
 
   # GET /matches/1/edit
   def edit
+    @challengers = Team.all
   end
 
   # POST /matches
   # POST /matches.json
   def create
     @match = Match.new(match_params)
-
+    if(params[:match][:team_id] == params[:match][:challenger_id])
+      flash[:notice] = 'O time não pode jogar contra ele mesmo'
+      return redirect_to action: 'new'
+    end
     respond_to do |format|
       if @match.save
         format.html { redirect_to @match, notice: 'Match was successfully created.' }
