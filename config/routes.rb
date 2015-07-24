@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :matches
+
   resources :players do
   member do
     match :add_card, via:[:get, :post]
