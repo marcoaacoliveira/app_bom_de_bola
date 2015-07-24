@@ -23,3 +23,11 @@ require 'csv'
 CSV.foreach("db/csv/equipes_bom_de_bola.csv", { encoding: "UTF-8", headers: true, header_converters: :symbol, converters: :all}) do |row|
   Team.create(row.to_hash)
 end
+
+u = Player.all
+u.each do |x|
+  x.destroy
+end
+CSV.foreach("db/csv/dados-dos-jogadores.csv", { encoding: "UTF-8", headers: true, header_converters: :symbol, converters: :all}) do |row|
+  Player.create(row.to_hash)
+end

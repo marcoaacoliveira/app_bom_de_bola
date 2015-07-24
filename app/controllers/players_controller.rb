@@ -6,7 +6,7 @@ class PlayersController < ApplicationController
   # GET /players
   # GET /players.json
   def index
-    @players = Player.all
+    @players = Player.all.limit(100).order(:name)
   end
 
   # GET /players/1
@@ -67,7 +67,9 @@ class PlayersController < ApplicationController
   def add_card
     if request.post?
       @player.handle_cards(params[:yellow], params[:red])
-      @player.save
+      if @player.save
+        return redirect_to action: 'index'
+      end
     end
   end
 
