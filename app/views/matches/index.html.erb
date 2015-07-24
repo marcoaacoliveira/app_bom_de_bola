@@ -3,10 +3,10 @@
 <table>
   <thead>
     <tr>
-      <th>Team id1</th>
-      <th>Team id2</th>
-      <th>Date</th>
-      <th>Field</th>
+      <th>When</th>
+      <th>Team</th>
+      <th>Challenger</th>
+      <th>Where</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -14,10 +14,10 @@
   <tbody>
     <% @matches.each do |match| %>
       <tr>
-        <td><%= match.team_id1 %></td>
-        <td><%= match.team_id2 %></td>
-        <td><%= match.date %></td>
-        <td><%= match.field_id %></td>
+        <td><%= match.when %></td>
+        <td><%= match.team %></td>
+        <td><%= match.challenger %></td>
+        <td><%= match.where %></td>
         <td><%= link_to 'Show', match %></td>
         <td><%= link_to 'Edit', edit_match_path(match) %></td>
         <td><%= link_to 'Destroy', match, method: :delete, data: { confirm: 'Are you sure?' } %></td>
