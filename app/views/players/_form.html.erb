@@ -4,7 +4,7 @@
     <div class="panel-body">
       <p class="text-center pv">Formulário para jogador.</p>
 
-      <%= form_for(@player) do |f| %>
+      <%= form_for(@player, :html => {:class => 'mb-lg'}) do |f| %>
       <% if @player.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(@player.errors.count, "error") %> prohibited this player from being saved:</h2>

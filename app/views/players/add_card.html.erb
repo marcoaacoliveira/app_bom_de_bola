@@ -1,0 +1,25 @@
+<div class="block-center mt-xl wd-xl">
+  <!-- START panel-->
+  <div class="panel panel-dark panel-flat">
+    <div class="panel-body">
+      <p class="text-center pv">Adicionar cartões.</p>
+
+        <small>Não adicione cartões vermelhos gerados por amarelos e vice-versa, isso será feito pela aplicação.</small>
+        <%= form_tag(add_card_player_path,:html => {:class => 'mb-lg'}) do  %>
+            <div class="form-group has-feedback">
+              <%= label_tag(:red, "Cartões vermelhos",:class => 'text-muted') %><br>
+              <%= number_field_tag(:red,:class => 'form-control')  %>
+            </div>
+            <div class="form-group has-feedback">
+              <%= label_tag(:yellow, "Cartões amarelos", :class => 'text-muted') %><br>
+              <%= number_field_tag(:yellow,:class => 'form-control')  %>
+            </div>
+            <div class="actions">
+              <%= submit_tag('Enviar', :class => 'btn btn-block btn-primary mt-lg') %>
+            </div>
+        <% end %>
+
+    </div>
+  </div>
+  <!-- END panel-->
+</div>

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :players
+  resources :players do
+  member do
+    match :add_card, via:[:get, :post]
+  end
+end
 
   resources :teams
 

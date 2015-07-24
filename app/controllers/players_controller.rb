@@ -1,5 +1,5 @@
 class PlayersController < ApplicationController
-  before_action :set_player, only: [:show, :edit, :update, :destroy]
+  before_action :set_player, only: [:show, :edit, :update, :destroy, :add_card]
   before_action :set_teams, only: [:edit,:new]
 
 
@@ -60,6 +60,14 @@ class PlayersController < ApplicationController
     respond_to do |format|
       format.html { redirect_to players_url, notice: 'Player was successfully destroyed.' }
       format.json { head :no_content }
+    end
+  end
+
+
+  def add_card
+    if request.post?
+      @player.handle_cards(params[:yellow], params[:red])
+      @player.save
     end
   end
 
