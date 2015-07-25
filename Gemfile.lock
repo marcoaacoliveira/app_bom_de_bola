@@ -43,6 +43,8 @@ GEM
     erubis (2.7.0)
     eventmachine (1.0.7)
     execjs (2.2.2)
+    figaro (1.1.1)
+      thor (~> 0.14)
     hike (1.2.3)
     i18n (0.7.0)
     jbuilder (2.2.6)
@@ -124,6 +126,7 @@ DEPENDENCIES
   bcrypt
   bower-rails (~> 0.9.2)
   coffee-rails (~> 4.0.0)
+  figaro
   jbuilder (~> 2.0)
   pg
   rails (= 4.1.8)

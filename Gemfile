@@ -45,4 +45,6 @@ gem 'rails_12factor'
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
+#Adicionando figaro para adicionar variaveis de ambiente
+gem 'figaro'
 gem "bower-rails", "~> 0.9.2"

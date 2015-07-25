@@ -29,6 +29,7 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        CoachNotifier.send_signup_email(@user).deliver
         format.html { redirect_to @user, notice: 'Usuário criado com sucesso.' }
         format.json { render :show, status: :created, location: @user }
       else
