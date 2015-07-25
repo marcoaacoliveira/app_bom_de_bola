@@ -2,22 +2,22 @@
 
 <p>
   <strong>When:</strong>
-  <%= @match.when %>
+  <%= match.when.strftime("%d/%m/%Y às %H:%M") %>
 </p>
 
 <p>
   <strong>Team:</strong>
-  <%= @match.team %>
+  <%= Team.find(match.team_id).name  %>
 </p>
 
 <p>
   <strong>Challenger:</strong>
-  <%= @match.challenger %>
+  <%= Team.find(match.challenger_id).name  %>
 </p>
 
 <p>
   <strong>Where:</strong>
-  <%= @match.where %>
+  <%= Field.find(match.where_id).name %>
 </p>
 
 <%= link_to 'Edit', edit_match_path(@match) %> |
