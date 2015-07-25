@@ -49,10 +49,10 @@ class MatchesController < ApplicationController
   # PATCH/PUT /matches/1
   # PATCH/PUT /matches/1.json
   def update
-    prev_match = self
+    prev_match = @match
     respond_to do |format|
       if @match.update(match_params)
-        CoachNotifier.changed_match(self,[self.team,self.challenger], prev_match).deliver
+        CoachNotifier.changed_match(@match,[@match.team_id,@match.challenger_id], prev_match).deliver
         format.html { redirect_to @match, notice: 'Partida atualizada com sucesso, os treinadores foram alertados sobre a mudança.' }
         format.json { render :show, status: :ok, location: @match }
       else
