@@ -52,7 +52,7 @@ class MatchesController < ApplicationController
     prev_match = self
     respond_to do |format|
       if @match.update(match_params)
-        CoachNotifier.hanged_match(self.match,[self.team,self.challenger], prev_match).deliver
+        CoachNotifier.hanged_match(self,[self.team,self.challenger], prev_match).deliver
         format.html { redirect_to @match, notice: 'Partida atualizada com sucesso, os treinadores foram alertados sobre a mudança.' }
         format.json { render :show, status: :ok, location: @match }
       else
