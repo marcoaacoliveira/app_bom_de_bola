@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+</head>
+<body>
+<h1>Treinador <%= @user.name %> atenção, sua partida sofreu alterações!</h1>
+<p>Sua partida que ocorreria <%= @prev_match.when.strftime("%d/%m/%Y às %H:%M") %> no campo <%= @prev_match.field.name%>, acontecerá agora <%= @match.when.strftime("%d/%m/%Y às %H:%M") %> no campo <%= @match.field.name%>   </p>
+</body>
+</html>
