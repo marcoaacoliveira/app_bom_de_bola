@@ -4,7 +4,7 @@ class CoachNotifier < ActionMailer::Base
   def send_signup_email(user)
     @user = user
     mail( :to => @user.email,
-          :subject => 'Bem vindo #{@user.name}!' )
+          :subject => "Bem vindo #{@user.name}!" )
   end
 
   def changed_match(match,teams, prev_match)
