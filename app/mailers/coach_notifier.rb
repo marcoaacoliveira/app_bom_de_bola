@@ -11,9 +11,9 @@ class CoachNotifier < ActionMailer::Base
     @match = match
     @prev_match = prev_match
     teams.each do |team|
-       @user = team.user
-        mail( :to => team.user.email,
-              :subject => 'Atenção #{@user.name}, sua partida sofreu alterações!' )
+       @user = Team.find(@match.team_id).user
+        mail( :to => @user.email,
+              :subject => "Atenção #{@user.name}, sua partida sofreu alterações!" )
     end
   end
 end
