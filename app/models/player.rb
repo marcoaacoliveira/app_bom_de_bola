@@ -1,5 +1,7 @@
 class Player < ActiveRecord::Base
+  default_scope {order('name asc')}
   belongs_to :team
+
   def handle_cards(yellow,red)
     red = red.to_i
     yellow = yellow.to_i
@@ -28,6 +30,7 @@ class Player < ActiveRecord::Base
         self.red+= red
         self.team.red += red
     end
+    self.team.save
   end
 
 end

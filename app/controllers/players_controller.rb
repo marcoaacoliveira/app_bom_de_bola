@@ -6,7 +6,7 @@ class PlayersController < ApplicationController
   # GET /players
   # GET /players.json
   def index
-    @players = Player.all.limit(100).order(:name)
+    @players = Player.all.limit(200)
   end
 
   # GET /players/1
