@@ -22,6 +22,8 @@ class MatchesController < ApplicationController
 
   # GET /matches/1/edit
   def edit
+
+    @fields = Field.all
     @challengers = Team.all
   end
 

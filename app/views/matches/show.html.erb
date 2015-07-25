@@ -1,23 +1,23 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>When:</strong>
-  <%= match.when.strftime("%d/%m/%Y às %H:%M") %>
+  <strong>Quando:</strong>
+  <%= @match.when.strftime("%d/%m/%Y às %H:%M") %>
 </p>
 
 <p>
-  <strong>Team:</strong>
-  <%= Team.find(match.team_id).name  %>
+  <strong>Time:</strong>
+  <%= Team.find(@match.team_id).name  %>
 </p>
 
 <p>
-  <strong>Challenger:</strong>
-  <%= Team.find(match.challenger_id).name  %>
+  <strong>Desafiante:</strong>
+  <%= Team.find(@match.challenger_id).name  %>
 </p>
 
 <p>
-  <strong>Where:</strong>
-  <%= Field.find(match.where_id).name %>
+  <strong>Campo:</strong>
+  <%= Field.find(@match.where_id).name %>
 </p>
 
 <%= link_to 'Edit', edit_match_path(@match) %> |
