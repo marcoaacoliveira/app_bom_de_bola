@@ -4,7 +4,7 @@
   <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
 </head>
 <body>
-<h1>Treinador <%= @user.name %> atenção, sua partida sofreu alterações!</h1>
+<h1>Treinador atenção, sua partida sofreu alterações!</h1>
 
 <p>Sua partida que ocorreria <%= @prev_match.when.strftime("%d/%m/%Y às %H:%M") %> no campo <%= Field.find(@prev_match.where_id).name%>, acontecerá agora <%= @match.when.strftime("%d/%m/%Y às %H:%M") %> no campo <%= Field.find(@match.where_id).name%>   </p>
 </body>
