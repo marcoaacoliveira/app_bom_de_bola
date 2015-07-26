@@ -37,7 +37,7 @@ class MatchesController < ApplicationController
     end
     respond_to do |format|
       if @match.save
-        format.html { redirect_to @match, notice: 'Match was successfully created.' }
+        format.html { redirect_to @match, notice: 'Partida criada com sucesso.' }
         format.json { render :show, status: :created, location: @match }
       else
         format.html { render :new }
@@ -67,7 +67,7 @@ class MatchesController < ApplicationController
   def destroy
     @match.destroy
     respond_to do |format|
-      format.html { redirect_to matches_url, notice: 'Match was successfully destroyed.' }
+      format.html { redirect_to matches_url, notice: 'Partida excluida com sucesso.' }
       format.json { head :no_content }
     end
   end
