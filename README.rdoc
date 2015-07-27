@@ -1,7 +1,7 @@
 == APP Bom de Bola
 
 Aplicativo criado em 3 dias, para o desafio HackerCidadão 3.0
-App made on 3 days for the challenge "HackerCidadão 3.0"
+App made in 3 days for the challenge "HackerCidadão 3.0"
 
 Você pode visualiza-lo:
 You can check it:
