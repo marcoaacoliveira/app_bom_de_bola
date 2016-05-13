@@ -15,7 +15,7 @@ class LoginController < ApplicationController
         return
       end
 
-      if password.blank?
+      if password.blank
         flash[:notice] =  "Informe uma senha"
         return
       end
